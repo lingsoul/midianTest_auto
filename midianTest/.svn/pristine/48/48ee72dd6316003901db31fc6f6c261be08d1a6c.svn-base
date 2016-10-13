@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test-class Suite]" parallel="tests">
+  <test name="AccountRecharge(failed)" parallel="tests">
+    <classes>
+      <class name="com.midian.webtest.use.AccountRecharge">
+        <methods>
+          <include name="accountRecharge1"/>
+          <include name="beforeTest"/>
+          <include name="accountRecharge2"/>
+        </methods>
+      </class> <!-- com.midian.webtest.use.AccountRecharge -->
+    </classes>
+  </test> <!-- AccountRecharge(failed) -->
+</suite> <!-- Failed suite [Test-class Suite] -->
