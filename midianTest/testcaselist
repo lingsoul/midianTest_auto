@@ -1,0 +1,2 @@
+TestCase1 = PublishAuctionAndFixed,AccountRecharge,TradeRegister
+TestCase2 = ${TestCase1},AccountRecharge,TradeRenew

@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]">
+  <parameter name="password" value="123123"/>
+  <parameter name="indexURL" value="http://ming.dev.bizcn.com/home/index/index.html"/>
+  <parameter name="cookiesType" value="test"/>
+  <parameter name="username" value="10110"/>
   <test name="Default test(failed)">
     <classes>
-      <class name="com.midian.webtest.use.PublishAuction">
+      <class name="com.midian.webtest.use.AddCookiesBatch">
         <methods>
           <include name="afterTest"/>
-          <include name="publishAuction"/>
           <include name="beforeTest"/>
+          <include name="addCookiesBatch" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.midian.webtest.use.PublishAuction -->
+      </class> <!-- com.midian.webtest.use.AddCookiesBatch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

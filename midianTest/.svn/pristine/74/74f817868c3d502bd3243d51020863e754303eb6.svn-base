@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite
+	name="Test-class Suite"
+	parallel="tests"
+	thread-count="5">
+	<!-- 米店测试环境参数 -->
+	<parameter name="indexURL"
+		value="http://ming.dev.bizcn.com/home/index/index.html"></parameter>
+	
+	<!-- 用户名 -->
+	<parameter name="username"
+		value="10110"></parameter>
+	
+	<!-- 密码 -->
+	<parameter name="password"
+		value="123123"></parameter>
+
+	<!-- 提示问题答案 -->
+	<parameter name="answer"
+		value="aa"></parameter>
+	
+	<!-- 注册域名前缀 -->
+	<parameter name="regTrade"
+		value="autoreg"></parameter>
+	
+	<!-- 缓存类型 -->
+	<parameter name="cookiesType"
+		value="test"></parameter>
+
+	<test name="AddCookiesBatch">
+		<classes>
+			<class name="com.midian.webtest.use.AddCookiesBatch" />
+		</classes>
+	</test>
+	<test name="PublishAuction">
+		<classes>
+			<class name="com.midian.webtest.use.PublishAuction" />
+		</classes>
+	</test>
+
+	<test name="PublishFixedPrice">
+		<classes>
+			<class name="com.midian.webtest.use.PublishFixedPrice" />
+		</classes>
+	</test>
+
+	<test name="PublishAuctionAndFixed">
+		<classes>
+			<class name="com.midian.webtest.use.PublishAuctionAndFixed" />
+		</classes>
+	</test>
+
+	<test name="AccountRecharge">
+		<classes>
+			<class name="com.midian.webtest.use.AccountRecharge" />
+		</classes>
+	</test>
+
+	<test name="TradeRenew">
+		<classes>
+			<class name="com.midian.webtest.use.TradeRenew" />
+		</classes>
+	</test>
+
+	<test name="TradeRegister">
+		<classes>
+			<class name="com.midian.webtest.use.TradeRegister" />
+		</classes>
+	</test>
+</suite>
